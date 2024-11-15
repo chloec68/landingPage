@@ -1,0 +1,613 @@
+
+/* A FAIRE : EM AU LIEU DE PX */
+/************************************************************************ GENERAL **********************************************************************/
+:root{
+font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin:0;
+}
+
+/* COLORS */
+.whiteColor{
+    color:white;
+}
+
+.darkGreyColor{
+    color:#3B3B3B;
+}
+
+.lightGreyColor{
+    color:grey;
+    font-size:16px;
+    font-weight: 200;
+}
+
+.padding30{
+    padding:30px;
+}
+
+.sectionTitle{
+    font-weight: 500;
+    font-size:26px;
+    text-align: center;
+    margin-bottom:0px;
+}
+
+/************************************************************************* HEADER **************************************************************/
+
+header{
+    height:100vh;
+    overflow:auto;
+    background: rgb(81,219,255);
+    background: radial-gradient(circle, rgba(81,219,255,0.3533614129245448) 0%, rgba(73,205,232,1) 100%);
+    padding:20px;
+}
+
+/******************************** LINKS AT TOP OF THE HEADER  */
+
+#topPageLinks{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:30px;
+}
+
+/********************************** HEADER: MAIN LINKS */
+nav{
+    display:flex;
+    width:50%;
+    justify-content: space-around;
+    margin:auto;
+}
+
+#mainLinks a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:rgb(4,139,154);
+}
+
+#kucra{
+    padding-left:100px;
+    margin:0;
+    font-size:30px;
+    font-weight:600;
+}
+
+#kucra a:hover{
+    color:rgb(4,139,154);
+}
+
+#kucra a{
+    text-decoration: none;
+}
+
+/************************************* HEADER: SOCIAL MEDIA LINKS */
+i{
+    width:25px;
+    height:25px;
+    margin:auto;
+    color:white;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+a i:hover{
+    color:rgb(4,139,154);
+}
+
+li{
+    list-style-type: none
+}
+
+/********************************************** IMAGE */
+img{
+    width:55%;
+}
+
+/********************************************* ARTICLE */
+#wrapperHeaderArticle{
+    width:90%;
+}
+
+#wrapperHeaderArticle{
+    display: flex;
+    padding: 80px;
+    justify-content: space-around;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+
+/************************************** FORM & SUBMIT BUTTON*/
+#form{
+    position:absolute;
+    margin-top: 20px;
+}
+
+#email{
+    position :relative;
+    z-index:1;
+    width:340px;
+    height:45px;
+    border-radius:30px;
+    border:none;
+    padding-left:20px;
+    font-size:16px;
+    font-weight:200;
+}
+
+#submitButton{
+    position:relative;
+    z-index: 2;
+    left: 232px;
+    top:-46px;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    background-color:rgb(4,139,154);
+    border:0;
+    font-size:14px;
+    font-weight:300;
+    margin:3px;
+    color:white;
+}
+
+#submitButton:hover{
+    width:130px;
+    height:50px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+/************************************************ MEDIAS QUERIES - MOBILE */
+@media only screen and (max-width: 320px){
+
+}
+
+/************************************************* MEDIAS QUUERIES - TABLETS */
+@media only screen and (max-width: 600px){
+
+}
+
+/* A FAIRE : CHANGER TAILLE CARACTERES : PX->EM */
+
+/* ************************************************************FEATURES****************************************************************** */
+
+
+
+#featuresContainer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    height:300px;
+    padding-bottom: 200px;
+}
+
+
+#intro{
+    color:grey;
+    margin:0px;
+}
+
+.featuresArticle{
+    background: rgb(81,219,255);
+    background: radial-gradient(circle, rgba(81,219,255,0.3533614129245448) 0%, rgba(73,205,232,1) 100%);
+    width:300px;
+    height:100%;
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    padding:20px;
+}
+
+ .featuresParagraphs{
+    font-weight: 300;
+    text-align: center;
+}
+
+.featuresH3Title{
+    font-size:24px;
+    font-weight: 300;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#chest,#brush,#globe{
+    width:50px;
+    height:50px;
+    margin:auto;
+}
+
+.text{
+    padding-bottom:50px;
+}
+
+/* ******************************************************** SECTION TEAM************************************************************* */
+
+/******************************** GENERAL */
+#teamWrapper{
+    background-color: white;
+    padding:30px;
+}
+
+#teamContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.teamMember{
+    margin-top:50px;
+    width:15%;
+}
+
+.teamMember,#teamWrapper p{
+    text-align: center;
+}
+
+/********************************* PARAGRAPH (light grey sentence)*/
+
+#teamWrapper p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/******************************** NUMBERS */
+.result{
+    font-size:18px;
+}
+/********************************* IMAGE */
+
+#teamWrapper img{
+    width: 150px;
+    border-radius: 100px;
+    filter:grayscale(100%);
+    margin-top: 30px;
+  }
+/******************************** TEAM MEMBERS NAME */
+
+.name{
+    font-size:14px;
+}
+
+/* ******************************* HOVER */
+
+.teamMember:hover {
+    transform: scale(1.3);
+    cursor:pointer;
+}
+
+#teamWrapper img:hover{
+    filter:none;
+}
+   
+    /* A FAIRE : APPARITION ICÔNES RESEAUX SOCIAUX */
+
+
+/****************************************************** PARALLAX ***********************************************************/
+
+/************************GENERAL*/
+
+#parallaxWrapper{
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+/**************************PARALLAX / IMAGE*/
+
+#parallaxContainer{
+    background:#000000;
+    height:500px;
+    margin:auto;
+    width:100%;
+    position:relative;
+}
+
+#parallaxContainer:before{
+    content: '';
+    background-image:url(img_landingPage/parallax.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    transition:0.5s;
+    display: inline-block;
+    height:500px;
+    width:100%;
+    position:relative;
+    z-index:1;
+    margin:auto;
+}
+
+#parallaxContainer:hover:before{
+    opacity:0.5;
+}
+
+/**********************************PARALLAX / TEXTE*/
+
+#textOnImg{
+    position:absolute;
+    left:0;top:0;
+    opacity:0;
+    transition:0.5s;
+    z-index:2;
+    width:100%;
+    top:40%;
+    color:white;
+    text-align: center;
+}
+
+
+#parallaxContainer:hover #textOnImg{
+    opacity:1;
+}
+
+#parallaxWrapper p{
+    font-weight:200;
+    padding-top:20px;
+}
+/****************************************BUTTON  */
+
+#parallaxWrapper #button{
+    width:150px;
+    height:50px;
+    font-size:16px;
+    color:white;
+    margin-top:30px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    border:1px white solid;
+}
+
+#parallaxWrapper #button:hover{
+    cursor: pointer;
+    width:170px;
+    height:60px;
+}
+
+#parallaxWrapper #button:active{
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+/****************************************************** SECTION BLOG *********************************************************/
+
+#wrapper{
+    width:100%;
+    height:450px;
+    display:flex;
+    gap:40px;
+    justify-content: center;
+    padding-bottom:100px;
+}
+
+article{
+    text-align:left;
+    width:400px;
+    height:300px;
+    position:relative;
+}
+
+#article1:before{
+    content:'';
+    background:url('img_landingPage/blog1.png');
+    background-size:cover;
+    background-position:50% 100%;
+    transition:0.5s;
+    display:inline-block;
+    height:100%;
+    width:100%;
+    position:relative;
+    z-index:1;
+    border-radius:5px;
+}
+
+#article2:before{
+    content:'';
+    background:url('img_landingPage/blog2.png');
+    background-size:cover;
+    background-position:50% 100%;
+    transition:0.5s;
+    display:inline-block;
+    height:100%;
+    width:100%;
+    position:relative;
+    z-index:1;
+    border-radius:5px;
+}
+
+#article3:before{
+    content:'';
+    background:url('img_landingPage/blog3.png');
+    background-size:cover;
+    background-position:50% 100%;
+    transition:0.5s;
+    display:inline-block;
+    height:100%;
+    width:100%;
+    position:relative;
+    z-index:1;
+    border-radius:5px;
+}
+
+.textOnImgSection4{
+    position:absolute;
+    left:0;top:0;
+    opacity:0;
+    transition:0.5s;
+    z-index:2;
+    padding:30px;
+    color:white;
+}
+
+article:hover:before{
+    filter:brightness(0.6);
+}
+
+article:hover .textOnImgSection4{
+    opacity:1;
+}
+
+.blogPicture{
+    width:100%;
+    border-radius: 5px;
+}
+
+.icon{
+    width:20px;
+    color:white;
+}
+
+.textUnderImage a{
+    color:rgb(81,219,255);
+    text-decoration: none;
+
+}
+
+/* *************************************************** PRICING SECTION ********************************************************************** */
+
+/************************************* CREATIVITY */
+#pricingWrapper{
+    width:90%;
+    display:flex;
+    padding:30px;
+    justify-content: center;
+}
+
+figure{
+    width:30%;
+    padding-left:50px; 
+}
+
+#creativity{
+    width:100%;
+}
+
+#creativityArticle{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+}
+
+h3{
+    padding-bottom:30px;
+}
+
+#pricingButton{
+    width:120px;
+    height:40px;
+    background-color: rgb(81,219,255);
+    color:white;
+    border:none;
+    border-radius:5px;
+    margin-top:30px;
+}
+
+#pricingButton:hover{
+    cursor:pointer;
+    width: 150px;
+    height:60px;
+}
+
+#pricingButton:active{
+    background-color: rgb(65, 171, 197);
+}
+
+#statsPricingSection{
+    display:flex;
+    gap:30px;
+    padding-top:30px;
+}
+
+#statsText{
+    display:flex;
+    flex-direction: column;
+}
+
+/***************************************** PRICES */
+
+#pricingCardsWrapper{
+    margin-top:100px;
+    width:100%;
+    height:600px;
+    display:flex;
+    background-color:#E8E8E8;
+    text-align: center;
+    justify-content: center;
+}
+
+#pricingCards{
+    display:flex;
+    gap:100px;
+    width:70%;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.pricingCard{
+    width:20%;
+    background-color: white;
+    height:70%;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    padding-right:10px;
+    box-shadow: 1px 14px 35px -8px rgba(0,0,0,0.75);
+    
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom:5px;
+}
+
+.fa-circle-check{
+    color:green;
+    margin:0px;
+}
+
+.fa-circle-xmark{
+    color:red;
+}
+
+.price{
+    font-size: 3em;
+    color:rgb(81,219,255);
+}
+
+.perMonth{
+    width:30%;
+  
+}
+.priceBox{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#joinNowButton{
+    background-color:rgb(81,219,255);
+    color:white;
+    width:80%;
+    height:10%;
+    margin-left:auto;
+    margin-right: auto;
+    border:0;
+    border-radius: 5px;
+}
