@@ -86,11 +86,10 @@ nav a:hover{
 }
 
 /************************************* HEADER: SOCIAL MEDIA LINKS */
-i{
-    width:25px;
-    height:25px;
+.headerI{
     margin:auto;
     color:white;
+    width:50%;
 }
 
 ul{
@@ -99,12 +98,12 @@ ul{
     width: 150px;
 }
 
-a i:hover{
+a .headerI:hover{
     color:rgb(4,139,154);
 }
 
 li{
-    list-style-type: none
+    list-style-type: none;
 }
 
 /********************************************** IMAGE */
@@ -165,11 +164,12 @@ h2{
 }
 
 #submitButton:hover{
-    width:130px;
-    height:50px;
-    border-radius:30px;
     cursor:pointer;
     font-weight:500;
+}
+
+#submitButton:active{
+   background-color: rgb(1, 202, 224);
 }
 
 /************************************************ MEDIAS QUERIES - MOBILE */
@@ -502,7 +502,7 @@ figure{
     width:40%;
 }
 
-h3{
+.paddingBottom{
     padding-bottom:30px;
 }
 
@@ -518,12 +518,12 @@ h3{
 
 #pricingButton:hover{
     cursor:pointer;
-    width: 150px;
-    height:60px;
+ 
 }
 
 #pricingButton:active{
-    background-color: rgb(65, 171, 197);
+    background-color:rgb(6, 135, 168);
+   
 }
 
 #statsPricingSection{
@@ -542,7 +542,7 @@ h3{
 #pricingCardsWrapper{
     margin-top:100px;
     width:100%;
-    height:600px;
+    height:800px;
     display:flex;
     background-color:#E8E8E8;
     text-align: center;
@@ -555,7 +555,7 @@ h3{
     height:20px;
     width:100%;
     position:absolute;
-    top:-50px;
+    top:50px;
 }
 
 #pricingCards{
@@ -564,16 +564,20 @@ h3{
     width:70%;
     justify-content: center;
     padding-top: 100px;
+    position:relative;
+    top:100px;
+    height:500px;
 }
 
 .pricingCard{
     width:20%;
     background-color: white;
-    height:85%;
+    height:80%;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
-    padding-right:10px;
+    padding-right:20px;
+    padding-left:20px;
     box-shadow: 1px 14px 35px -8px rgba(0,0,0,0.75);
     
 }
@@ -621,6 +625,48 @@ h3{
     border-radius: 5px;
 }
 
+.joinNowButton:hover{
+    cursor: pointer;
+}
+
+.joinNowButton:active{
+    background-color:rgb(6, 135, 168)
+}
+
 .paddingTop{
     padding-top:25px;
+}
+
+
+
+/************************************************************************** FOOTER ***************************************************************/
+
+footer{
+text-align: center;
+background-color: rgb(24, 23, 23);
+padding:80px;
+}
+
+
+
+.circle{
+    width:20px;
+    height:20px;
+    border-radius: 30px;
+    border:solid 1px grey;
+    display: inline-block;   
+    padding: 10px;
+    margin:20px;
+}
+
+#legalNotice a{
+    margin:20px;
+}
+
+.separator{
+    width:10px;
+}
+
+#small{
+    padding:20px;
 }
