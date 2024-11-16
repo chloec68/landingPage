@@ -659,6 +659,13 @@ padding:80px;
     margin:20px;
 }
 
+#legalNotice{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
 #legalNotice a{
     margin:20px;
 }
