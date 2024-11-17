@@ -52,8 +52,7 @@ h3{
 
 #upButton:active{
     opacity:1;
-    width:60px;
-    height:60px;
+    transform: scale(1.3);
 }
 
 /************************************************************************* HEADER **************************************************************/
@@ -192,6 +191,7 @@ h2{
 
 #submitButton:active{
    background-color: rgb(1, 202, 224);
+   transform: scale(1.3);
 }
 
 /************************************************ MEDIAS QUERIES - MOBILE */
@@ -415,8 +415,7 @@ h2{
 
 #parallaxWrapper #button:hover{
     cursor: pointer;
-    width:170px;
-    height:60px;
+    transform: scale(1.3);
 }
 
 #parallaxWrapper #button:active{
@@ -558,7 +557,8 @@ figure{
 
 #pricingButton:hover{
     cursor:pointer;
- 
+    transform: scale(1.3);
+
 }
 
 #pricingButton:active{
@@ -670,10 +670,11 @@ figure{
 
 .joinNowButton:hover{
     cursor: pointer;
+    transform: scale(1.3);
 }
 
 .joinNowButton:active{
-    background-color:rgb(6, 135, 168)
+    background-color:rgb(6, 135, 168);
 }
 
 h4{
