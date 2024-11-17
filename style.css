@@ -257,7 +257,7 @@ h2{
 
 /* ******************************************************** SECTION TEAM************************************************************* */
 
-/******************************** GENERAL */
+/************************************************** GENERAL */
 #teamWrapper{
     background-color: white;
     padding:30px;
@@ -271,24 +271,25 @@ h2{
 .teamMember{
     margin-top:50px;
     width:15%;
+    position:relative;
 }
 
 .teamMember,#teamWrapper p{
     text-align: center;
 }
 
-/********************************* PARAGRAPH (light grey sentence)*/
+/********************************************* PARAGRAPH (light grey sentence)*/
 
 #teamWrapper p{
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
-/******************************** NUMBERS */
+/********************************************** NUMBERS */
 .result{
     font-size:18px;
 }
-/********************************* IMAGE */
+/********************************************** IMAGE */
 
 #teamWrapper img{
     width: 150px;
@@ -296,19 +297,38 @@ h2{
     filter:grayscale(100%);
     margin-top: 30px;
   }
-/******************************** TEAM MEMBERS NAMES */
+/********************************************** TEAM MEMBERS NAMES */
 
 .name{
     font-size:14px;
 }
 
-/* ******************************* HOVER */
+/**********************************************TEAM MEMBER SOCIAL MEDIAS */
 
+.teamMemberSocialMedias{
+    position:absolute;
+    top: 230px;
+    left: 50px;
+}
+
+.teamMemberSocialMedias a{
+    display: none;
+    margin-left:10px;
+    margin-right:10px;
+    color:rgb(23, 189, 222)
+    }
+
+/* ********************************************* HOVER */
+/* SOCIAL MEDIAS LINKS APPEAR WHEN HOVERING */
+.teamMember:hover a{
+    display: inline;
+}
+/* TEAM MEMBER PICTURE AND INFO SIZE UP */
 .teamMember:hover {
     transform: scale(1.3);
     cursor:pointer;
 }
-
+/* TEAM MEMBER PICTURE GOES FROM GRAYSCALE TO COLORS */
 #teamWrapper img:hover{
     filter:none;
 }
@@ -357,7 +377,7 @@ h2{
     opacity:0.5;
 }
 
-/**********************************PARALLAX / TEXTE*/
+/**********************************PARALLAX / TEXTE */
 
 #textOnImg{
     position:absolute;
