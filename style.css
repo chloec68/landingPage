@@ -47,7 +47,6 @@ h3{
 #upButton:hover{
     cursor: pointer;
     opacity:1;
-
 }
 
 #upButton:active{
@@ -691,8 +690,6 @@ background-color: rgb(24, 23, 23);
 padding:80px;
 }
 
-
-
 .circle{
     width:20px;
     height:20px;
@@ -719,4 +716,13 @@ padding:80px;
 
 #small{
     padding:20px;
+}
+
+#legalNotice a:hover{
+    cursor:pointer;
+}
+
+.circle a:hover,.circle:hover{
+    cursor:pointer;
+    transform: scale(1.3);
 }
