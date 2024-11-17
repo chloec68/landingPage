@@ -1,9 +1,6 @@
-
-/* A FAIRE : EM AU LIEU DE PX */
 /************************************************************************ GENERAL **********************************************************************/
 :root{
 font-family: "Poppins", sans-serif;
-/* scroll-behavior: smooth; */
 }
 
 *{
@@ -21,22 +18,20 @@ font-family: "Poppins", sans-serif;
 
 .lightGreyColor{
     color:grey;
-    font-size:16px;
+    font-size:1em;
     font-weight: 200;
 }
 
-.padding30{
-    padding:30px;
-}
-
-.sectionTitle{
-    font-weight: 500;
-    font-size:26px;
+/* SECTIONS TITLES */
+h3{
+    padding-top:30px;
+    padding-bottom:15px;
+    font-weight:600;
+    font-size:2em;
     text-align: center;
-    margin-bottom:0px;
 }
 
-/************************************************************************* SCROLL TOP BUTTON *********************************************************************/
+/************************************************************************* SCROLL TO TOP BUTTON *********************************************************************/
 
 #upButton{
     height:50px;
@@ -68,10 +63,12 @@ header{
     overflow:auto;
     background: rgb(81,219,255);
     background: radial-gradient(circle, rgba(81,219,255,0.3533614129245448) 0%, rgba(73,205,232,1) 100%);
-    padding:20px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-/******************************** LINKS AT TOP OF THE HEADER  */
+/******************************** LINKS (all) AT TOP OF THE HEADER  */
 
 #topPageLinks{
     display: flex;
@@ -98,7 +95,7 @@ nav a:hover{
 #kucra{
     padding-left:100px;
     margin:0;
-    font-size:30px;
+    font-size:1em;
     font-weight:600;
 }
 
@@ -121,6 +118,9 @@ ul{
     display: flex;
     justify-content: space-around;
     width: 150px;
+    padding-right:40px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 a .headerI:hover{
@@ -133,23 +133,20 @@ li{
 
 /********************************************** IMAGE */
 img{
-    width:55%;
+    width:50%;
 }
 
 /********************************************* ARTICLE */
 #wrapperHeaderArticle{
-    width:90%;
-}
-
-#wrapperHeaderArticle{
+    width:100%;
     display: flex;
-    padding: 80px;
     justify-content: space-around;
+    padding-top:70px;
 }
 
 h2{
     font-weight: 700;
-    font-size: 46px;
+    font-size: 3em;
     margin-bottom: 20px;
     margin-top:50px;
 }
@@ -182,7 +179,7 @@ h2{
     border-radius: 20px;
     background-color:rgb(4,139,154);
     border:0;
-    font-size:14px;
+    font-size:1em;
     font-weight:300;
     margin:3px;
     color:white;
@@ -207,11 +204,8 @@ h2{
 
 }
 
-/* A FAIRE : CHANGER TAILLE CARACTERES : PX->EM */
 
 /* ************************************************************FEATURES****************************************************************** */
-
-
 
 #featuresContainer{
     display:flex;
@@ -302,7 +296,7 @@ h2{
     filter:grayscale(100%);
     margin-top: 30px;
   }
-/******************************** TEAM MEMBERS NAME */
+/******************************** TEAM MEMBERS NAMES */
 
 .name{
     font-size:14px;
@@ -519,6 +513,7 @@ figure{
 
 #creativity{
     width:100%;
+    padding-left: 50px;
 }
 
 #creativityArticle{
@@ -566,13 +561,15 @@ figure{
 
 #pricingCardsWrapper{
     margin-top:100px;
-    width:100%;
+    width:90%;
     height:800px;
     display:flex;
     background-color:#E8E8E8;
     text-align: center;
     justify-content: center;
     position:relative;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #introPricing{
@@ -586,7 +583,7 @@ figure{
 #pricingCards{
     display:flex;
     gap:100px;
-    width:70%;
+    width:80%;
     justify-content: center;
     padding-top: 100px;
     position:relative;
@@ -597,7 +594,7 @@ figure{
 .pricingCard{
     width:20%;
     background-color: white;
-    height:80%;
+    height:90%;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
@@ -636,6 +633,7 @@ figure{
     display:flex;
     justify-content: center;
     align-items: baseline;
+    padding-bottom:40px;
 }
 
 .joinNowButton{
@@ -658,8 +656,8 @@ figure{
     background-color:rgb(6, 135, 168)
 }
 
-.paddingTop{
-    padding-top:25px;
+h4{
+    padding:25px;
 }
 
 
