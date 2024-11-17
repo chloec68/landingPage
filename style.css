@@ -322,11 +322,11 @@ h2{
 /* SOCIAL MEDIAS LINKS APPEAR WHEN HOVERING */
 .teamMember:hover a{
     display: inline;
+    cursor:pointer;
 }
 /* TEAM MEMBER PICTURE AND INFO SIZE UP */
 .teamMember:hover {
     transform: scale(1.3);
-    cursor:pointer;
 }
 /* TEAM MEMBER PICTURE GOES FROM GRAYSCALE TO COLORS */
 #teamWrapper img:hover{
