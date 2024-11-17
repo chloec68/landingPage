@@ -602,7 +602,6 @@ figure{
 
 #pricingCardsWrapper{
     display:flex;
-    gap:100px;
     width:80%;
     justify-content: center;
     padding-top: 100px;
@@ -627,17 +626,31 @@ figure{
 .starter{
     position:absolute;
     left:50px;
-
+    bottom:50px;
 }
 
 .advanced{
     position:absolute;
-    top:50px;
+    top:70px;
+}
+
+.sale-badge::after{
+    width:50px;
+    content: '20 % sale';
+    background:rgb(0, 166, 255);
+    font-size: 1em;
+    color:white;
+    padding: 5px;
+    border-radius:10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 .professional{
     position:absolute;
     right:50px;
+    bottom:50px;
 }
 
 .line{
