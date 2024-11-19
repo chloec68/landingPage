@@ -997,16 +997,18 @@ padding:80px;
         width:100%;
         text-align: center;
         height: 500px;
+        margin: auto;
     }
 
     #pricing{
         width:100%;
     }
 
-    #pricingWrapper figure,#creativity{
-        width:100%;
-        margin:0;
-        padding:0;
+    /* ICI YA UN PROBLEME */
+    #pricingWrapper figure, #creativity{
+        width:90%;
+        margin:auto;
+        padding:10px;
     }
 
     #statsPricingSection{
@@ -1067,6 +1069,27 @@ padding:80px;
 
     .circle{
         padding:5px;
+    }
+
+}
+
+    /* ************************************************* MEDIA QUERIES : TABLETS ************************************************* */
+
+    @media (max-width: 1024px){
+
+        :root{
+            font-size:16px;
+            margin:0;
+        }
+
+    #pricingWrapper{
+        display: block;
+        padding:0;
+        width: 100%;
+    }
+
+    #creativityArticle{
+        width:90%;
     }
 
 
