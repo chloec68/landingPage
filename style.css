@@ -372,7 +372,7 @@ h2{
 
 #textOnImg{
     position:absolute;
-    left:0;top:0;
+    left:0;
     opacity:0;
     transition:0.5s;
     z-index:2;
@@ -861,6 +861,15 @@ padding:80px;
         margin:20px;
     }
 
+    #email{
+        width:300px;
+    }
+
+    #submitButton{
+        width:80px;
+        font-size:0.7em;
+    }
+
   /********************** FEATURES *******************/
 
     #featuresContainer{
@@ -929,6 +938,16 @@ padding:80px;
 
     #parallaxContainer:before {
         background-position-x: 80%;
+    }
+
+    #textOnImg{
+        opacity: 1;
+        top: 25%;
+    }
+
+    #textOnImg p{
+        font-weight: 500;
+        margin:0 5px 0 5px;
     }
 
 /* ************** BLOG ************ */
@@ -1018,6 +1037,7 @@ padding:80px;
         width:50%;
         height: fit-content;
         left:20%;
+        padding-bottom: 10px;
        
     }
     .professional,.starter,.advanced{
@@ -1032,6 +1052,11 @@ padding:80px;
 
     .professional{
         bottom: auto;
+    }
+
+    .joinNowButton{
+        width:50%;
+        height:30px;
     }
 
     /* ********** FOOTER *********** */
