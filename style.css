@@ -75,7 +75,7 @@ header{
 }
 
 /********************************** HEADER: MAIN LINKS */
-nav{
+#mainLinks{
     display:flex;
     width:50%;
     justify-content: space-around;
@@ -764,3 +764,285 @@ padding:80px;
 }
 
 
+/* ************************************************* MEDIA QUERIES : MOBILE ************************************************* */
+
+@media (max-width: 480px){
+
+    :root{
+        font-size:16px;
+        margin:0;
+    }
+
+    /* ***************TO TOP BUTTON********** */
+
+    #upButton{
+        height:40px;
+        width:40px;
+        position:fixed;
+        bottom:20px;
+        right:30px;
+    }
+
+    /***************** HEADER*********** */
+    header{
+        padding:5px;
+        height: max-content;
+    }
+
+    #topPageLinks{
+        display:grid;
+        grid-template-columns: 0.8fr 1.2fr 0.8fr;
+        grid-template-rows: 1fr 0.2fr;
+        margin-bottom: 0px;
+        background: url(./illustration_1_1.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y:bottom;
+        background-size: 65%;
+    }
+
+    #kucra{
+        padding:5px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    #mainLinks{
+        display:block;
+        margin:10px;
+        grid-row-start: 1;
+    }
+
+    ul{
+        grid-column-start:3;
+        grid-row-start: 1;
+        padding:0px;
+        margin:0px;
+        display:flex;
+        width:auto;
+        margin-top:20px;
+    }
+
+    #wrapperHeaderArticle{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding:0px;
+    }
+
+    header img{
+        /* grid-row-start: 1;
+        margin: 0px auto 10px auto; */
+        display: none;
+    }
+
+    header article{
+        width:100%;
+        margin-top: 50px;
+    }
+
+    h2{
+        font-size: 1.5em;
+        margin:auto;
+        width:80%;
+        text-align: center;
+    }
+
+    header p{
+        padding:10px;
+        text-align: center;
+    }
+
+    #form{
+        margin:20px;
+    }
+
+  /********************** FEATURES *******************/
+
+    #featuresContainer{
+        display: block;
+        height: fit-content;
+        padding-bottom: 0;
+    }
+
+    .featuresArticle{
+        margin: 20px auto 20px auto;
+    }
+
+    .featuresParagraphs{
+        margin:0 10px 0 10px;
+    }
+
+    /********************* TEAM ***********************/
+
+    #teamContainer{
+        width:100%;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .teamMember{
+        display: block;
+        height: fit-content;
+        width:100%;
+        margin:0 0 30px 0;
+        
+    }
+
+    #teamWrapper img{
+        width: 180px;
+        border-radius: 100px;
+        filter:none;
+        margin-top: 0px;
+      }
+    
+    .teamMemberSocialMedias a{
+        display:inline;
+    }
+
+    .teamMemberSocialMedias{
+        position:static;
+     
+    }
+
+    .name{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1em;
+        margin:0;
+    }
+
+/*************** PARALLAX **************/
+
+    #parallaxWrapper{
+        padding:0;
+        margin-bottom: 20px;
+    }
+
+    #textOnImg h3{
+        padding:0;
+    }
+
+    #parallaxContainer:before {
+        background-position-x: 80%;
+    }
+
+/* ************** BLOG ************ */
+
+    #blogWrapper{
+        display: block;
+        width:100%;
+        height: fit-content;
+        padding:0 0 60px 0;
+        margin:0
+    }
+
+    #blogWrapper article{
+        margin:auto;
+        display:grid;
+        grid-template-rows: 1fr 0.2fr;
+        width:90%;
+       
+    }
+
+    #article1::before{
+        background-position: top;
+    }
+
+    .textUnderImage h4{
+        padding:0;
+    }
+
+    .textUnderImage a{
+        margin:0;
+        padding:0;
+    }
+
+    .textOnImgSection4{
+        display: none;
+    }
+
+/* ****************CREATIVITY************* */
+
+    #pricingWrapper {
+        padding:0;
+        margin: auto;
+        display: grid;
+    }
+
+    #creativityArticle{
+        width:100%;
+        text-align: center;
+        height: 500px;
+    }
+
+    #pricing{
+        width:100%;
+    }
+
+    #pricingWrapper figure,#creativity{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    #statsPricingSection{
+       justify-content: center;
+    }
+    
+    #learnMoreButton{
+        margin-right:auto;
+        margin-left:auto;
+    }
+/* ****************PRICING************* */
+    #pricingArticle{
+        width:100%;
+        height: 1600px;
+        margin-right: auto;
+        margin-left:auto;
+        display: block;
+    }
+
+    #pricingCardsWrapper{
+        display: block;
+        width:100%;
+        margin-bottom: 50px;
+        height: 1400px;
+    }
+
+    .pricingCard{
+        width:50%;
+        height: fit-content;
+        left:20%;
+       
+    }
+    .professional,.starter,.advanced{
+        position:relative;
+        bottom:auto;
+    }
+
+    .professional{
+        position: relative;
+       top:150px;
+    }
+
+    .professional{
+        bottom: auto;
+    }
+
+    /* ********** FOOTER *********** */
+
+    footer{
+        padding:10px;
+    }
+
+    .circle{
+        padding:5px;
+    }
+
+
+} 
