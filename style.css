@@ -54,6 +54,27 @@ h3{
     -webkit-transform:scale(1.3);
 }
 
+/* *********************************************************************** BURGER MENU *******************************************************/
+
+.mainLinks{display: none;}
+
+.menuIcon{
+    position:absolute;
+    top:0px;
+    left:77%;
+    bottom:0;
+    width:60px;   
+}
+
+.menuIcon:hover{
+    cursor: pointer;
+    width:70px;
+}
+
+#topNav{
+    width:50%;
+}
+
 /************************************************************************* HEADER **************************************************************/
 
 header{
@@ -72,14 +93,14 @@ header{
 }
 
 /********************************** HEADER: MAIN LINKS */
-#mainLinks{
-    display:flex;
-    width:50%;
+.mainLinks{
+    /* display:flex; */
+    width:100%;
     justify-content: space-around;
-    margin:auto;
+    margin:25px auto auto auto;
 }
 
-#mainLinks a{
+.mainLinks a{
     text-decoration: none;
 }
 
@@ -370,7 +391,7 @@ h2{
     opacity:0.5;
 }
 
-/**********************************PARALLAX / TEXTE */
+/**********************************PARALLAX / TEXT */
 
 #textOnImg{
     position:absolute;
@@ -437,7 +458,7 @@ article{
     position:relative;
 }
 
-/* ********************* ARTICLES 1 */
+/* ********************* ARTICLE 1 */
 
 #article1:before{
     content:'';
@@ -508,7 +529,7 @@ article:hover .textOnImgSection4{
     width:100%;
     border-radius: 5px;
 }
-/* ********************* CLOCK ICONE */
+/* ********************* CLOCK ICON */
 .fa-sharp{
     color:white;
 }
@@ -582,7 +603,7 @@ figure{
    
 }
 
-/***************************************** PRICING PART */
+/***************************************** PRICING */
 
 #pricingArticle{
     margin-top:100px;
@@ -809,7 +830,7 @@ padding:80px;
         font-size: 2.5em;
     }
 
-    #mainLinks{
+    .mainLinks{
         display:block;
         margin:10px;
         grid-row-start: 1;
@@ -1008,14 +1029,21 @@ padding:80px;
         margin: auto;
     }
 
+    #creativity{
+        padding-left: 0px;
+    }
+
     #pricing{
         width:100%;
     }
 
-    /* ICI YA UN PROBLEME */
     #pricingWrapper figure, #creativity{
         width:100%;
         margin:auto;
+    }
+
+    figure{
+        padding-left:0px;
     }
 
     #statsPricingSection{
@@ -1123,13 +1151,18 @@ padding:80px;
         font-size: 2.5em;
     }
 
-    #mainLinks{
+    .menuIcon{
+        display: none;
+    }
+
+    .mainLinks{
         display:block;
         margin:10px;
         grid-row-start: 1;
     }
 
-    #mainLinks a{
+    .mainLinks a{
+        display: flex;
         padding:10px 0 10px 10px;
         display: flex;
         flex-direction: column;
