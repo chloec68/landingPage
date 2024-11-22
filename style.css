@@ -58,12 +58,9 @@ h3{
 
 header{
     height:100vh;
-    overflow:auto;
+    /* overflow:auto; */
     background: rgb(81,219,255);
     background: radial-gradient(circle, rgba(81,219,255,0.3533614129245448) 0%, rgba(73,205,232,1) 100%);
-    padding-top: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
 /******************************** LINKS (all) AT TOP OF THE HEADER  */
@@ -131,12 +128,19 @@ li{
 
 /********************************************** IMAGE */
 img{
-    width:50%;
+    width:40%;
+    position:relative;
+    right:100px;
 }
 
 /********************************************* ARTICLE */
+
+#wrapperHeaderArticle article{
+    left:100px;
+    top:50px;
+}
+
 #wrapperHeaderArticle{
-    width:100%;
     display: flex;
     justify-content: space-around;
     padding-top:70px;
@@ -148,6 +152,7 @@ h2{
     margin-bottom: 20px;
     margin-top:50px;
 }
+
 
 /************************************** FORM & SUBMIT BUTTON*/
 #form{
@@ -324,9 +329,6 @@ h2{
     filter:none;
 }
    
-    /* A FAIRE : APPARITION ICÔNES RESEAUX SOCIAUX */
-
-
 /****************************************************** PARALLAX ***********************************************************/
 
 /************************GENERAL*/
@@ -766,7 +768,7 @@ padding:80px;
 
 /* ************************************************* MEDIA QUERIES : MOBILE ************************************************* */
 
-@media (max-width: 480px){
+@media screen and (max-width: 640px){
 
     :root{
         font-size:16px;
@@ -774,31 +776,26 @@ padding:80px;
     }
 
     /* ***************TO TOP BUTTON********** */
-
     #upButton{
-        height:40px;
-        width:40px;
-        position:fixed;
-        bottom:20px;
-        right:30px;
+        display: none;
     }
 
     /***************** HEADER*********** */
     header{
         padding:5px;
-        height: max-content;
+        height:400px;
     }
 
     #topPageLinks{
         display:grid;
-        grid-template-columns: 0.8fr 1.2fr 0.8fr;
-        grid-template-rows: 1fr 0.2fr;
+        grid-template-columns: 0.8fr 1fr 0.8fr;
+        grid-template-rows: 1fr;
         margin-bottom: 0px;
         background: url(./illustration_1_1.svg);
         background-repeat: no-repeat;
-        background-position-x: center;
+        background-position-x:65%;
         background-position-y:bottom;
-        background-size: 65%;
+        background-size: 60%;
     }
 
     #kucra{
@@ -816,6 +813,7 @@ padding:80px;
         display:block;
         margin:10px;
         grid-row-start: 1;
+   
     }
 
     ul{
@@ -829,45 +827,55 @@ padding:80px;
     }
 
     #wrapperHeaderArticle{
-        display: grid;
-        grid-template-columns: 1fr;
         padding:0px;
     }
 
     header img{
-        /* grid-row-start: 1;
-        margin: 0px auto 10px auto; */
         display: none;
     }
-
-    header article{
+    #wrapperHeaderArticle article{
         width:100%;
-        margin-top: 50px;
+        height:100px;
+        position: relative;
+        left:auto;
+        right: auto;
     }
 
     h2{
-        font-size: 1.5em;
+        font-size: 1em;
         margin:auto;
         width:80%;
         text-align: center;
+        position: relative;
+        top:-30px;
     }
 
     header p{
-        padding:10px;
+        display:none;
+        /* padding:0 5px 0 5px;
         text-align: center;
+        font-size:0.8em; */
     }
 
     #form{
-        margin:20px;
+        text-align: center;
+        width:100%;
+        margin-top: 0;
     }
 
     #email{
-        width:300px;
+        width:50%;
+        height:20px;
+
     }
 
     #submitButton{
-        width:80px;
+        width:25%;
         font-size:0.7em;
+        height: 20px;
+        top:0;
+        left:0;
+    
     }
 
   /********************** FEATURES *******************/
@@ -903,10 +911,11 @@ padding:80px;
     }
 
     #teamWrapper img{
-        width: 180px;
+        width: 150px;
         border-radius: 100px;
         filter:none;
         margin-top: 0px;
+        margin-left: 50%;
       }
     
     .teamMemberSocialMedias a{
@@ -1006,9 +1015,8 @@ padding:80px;
 
     /* ICI YA UN PROBLEME */
     #pricingWrapper figure, #creativity{
-        width:90%;
+        width:100%;
         margin:auto;
-        padding:10px;
     }
 
     #statsPricingSection{
@@ -1075,21 +1083,260 @@ padding:80px;
 
     /* ************************************************* MEDIA QUERIES : TABLETS ************************************************* */
 
-    @media (max-width: 1024px){
+    @media screen and (min-width:700px) and (max-width: 1084px){
 
+    /* ***********GENERAL************ */
         :root{
             font-size:16px;
             margin:0;
         }
 
+    /* ************* HEADER ************ */
+
+    #upButton{
+        display: none;
+    }
+
+    header{
+        padding:10px;
+        height:fit-content;
+    }
+
+    #topPageLinks{
+        display:grid;
+        height:500px;
+        grid-template-columns: 1fr 2fr 1fr;
+        background: url(./illustration_1_1.svg);
+        background-repeat: no-repeat;
+        background-position-x:50%;
+        background-position-y:bottom;
+        background-size: 70%;
+    }
+
+    #kucra{
+        padding:5px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    #mainLinks{
+        display:block;
+        margin:10px;
+        grid-row-start: 1;
+    }
+
+    #mainLinks a{
+        padding:10px 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul{
+        grid-column-start:3;
+        grid-row-start: 1;
+        padding:0px;
+        margin:0px;
+        display:flex;
+        width:auto;
+        margin-top:20px;
+    }
+
+    header img{
+        display: none;
+    }
+
+    #wrapperHeaderArticle{
+        padding-top: 0;
+    }
+
+    #wrapperHeaderArticle article{
+        width:100%;
+        position: relative;
+        left:auto;
+        right: auto;
+    }
+
+    h2{
+        font-size: 1.8em;
+        margin:auto;
+        width:80%;
+        text-align: center;
+    }
+
+    header p{
+        padding:0 5px 0 5px;
+        text-align: center;
+        font-size:1em;
+        margin: 20px;
+    }
+
+    #form{
+        text-align: center;
+        width:100%;
+    }
+
+    #email{
+        width:50%;
+        height:40px;
+
+    }
+
+    #submitButton{
+        width:25%;
+        font-size:0.9em;
+        height: 40px;
+        top:0;
+        left:0;
+    
+    }
+
+      /* ************* FEATURES ************ */
+
+      #featuresContainer{
+        margin:10px;
+        padding-bottom: 150px;
+      }
+
+    /* ************* TEAM ************ */
+
+    #teamWrapper img{
+        right:0px;
+        width:100px;
+    }
+
+    #teamWrapper p{
+        height:50px;
+    }
+
+    .teamMember h3{
+        height:50px;
+    }
+    
+    /* ************* PARALLAX ************ */
+
+
+    #parallaxWrapper{
+        padding:0;
+        margin-bottom: 20px;
+    }
+
+    #parallaxContainer:before {
+        background-position-x: 80%;
+
+    }
+
+    #textOnImg{
+        opacity: 1;
+        top: 20%;
+    }
+
+    #textOnImg p{
+        font-weight: 500;
+        margin:0 5px 0 5px;
+    }
+
+    #textOnImg p,#textOnImg h3,#textOnImg #button{
+        color: #242323;
+    }
+
+     /* ************* BLOG ************ */
+    #blogWrapper{
+        gap:10px;
+        padding-bottom: 200px;
+    }
+
+    #blogWrapper article{
+        width:30%;
+    }
+      
+    /* ************* PRICING ************ */
+    /* CREATIVITY */
+
     #pricingWrapper{
         display: block;
         padding:0;
         width: 100%;
+        margin:auto;
     }
 
     #creativityArticle{
-        width:90%;
+        width:80%;
+        margin:auto;
+    }
+
+    #creativityArticle p{
+        font-size:1em;
+    }
+
+    #learnMoreButton{
+        align-self: center;
+    }
+
+    #creativity{
+        width:50%;
+        margin-left:25%;
+        margin-top:100px;
+    }
+
+    figure{
+        /* width:80%;
+        margin-top:5%;
+        text-align: center; */
+        display: none;
+    }
+
+    #statsPricingSection{
+        margin:auto;
+    }
+
+     /* PRICING CARDS */
+
+     #pricingArticle{
+        width:100%;
+        height:1100px;
+    }
+
+    #pricingCardsWrapper{
+        display: block;
+        width:100%;
+    }
+
+    .pricingCard{
+        width:30%;
+        height: fit-content;
+        padding-bottom: 10px;
+       
+    }
+    .professional,.starter,.advanced{
+        position:relative;
+        bottom:auto;
+    }
+
+    .professional{
+        top:-800px;
+        left:480px;
+    }
+
+    .advanced{
+        left:270px;
+    }
+
+    .joinNowButton{
+        width:50%;
+        height:30px;
+    }
+
+      /**************** FOOTER **************/
+
+    footer{
+        max-width: 100%;
+        position:relative;
+        bottom:0;
     }
 
 
