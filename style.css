@@ -1238,7 +1238,8 @@ padding:80px;
 
     #teamWrapper img{
         right:0px;
-        width:100px;
+        width:130px;
+        filter:none;
     }
 
     #teamWrapper p{
