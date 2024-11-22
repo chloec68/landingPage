@@ -127,7 +127,7 @@ li{
 }
 
 /********************************************** IMAGE */
-img{
+header img{
     width:40%;
     position:relative;
     right:100px;
@@ -915,7 +915,6 @@ padding:80px;
         border-radius: 100px;
         filter:none;
         margin-top: 0px;
-        margin-left: 50%;
       }
     
     .teamMemberSocialMedias a{
