@@ -1366,6 +1366,9 @@ padding:80px;
       /**************** FOOTER **************/
 
     footer{
+        position:relative;
+        bottom:0px;
         max-width: 100%;
+        padding:50px;
     }
 } 
