@@ -1310,16 +1310,16 @@ padding:80px;
     }
 
     #creativity{
-        width:50%;
-        margin-left:25%;
-        margin-top:100px;
+        width:60%;
+        border-radius: 180px;
     }
 
     figure{
-        /* width:80%;
-        margin-top:5%;
-        text-align: center; */
-        display: none;
+        width:80%;
+        margin:auto;
+        padding:0px;
+        display: flex;
+        justify-content: center;
     }
 
     #statsPricingSection{
@@ -1367,9 +1367,5 @@ padding:80px;
 
     footer{
         max-width: 100%;
-        position:relative;
-        bottom:0;
     }
-
-
 } 
