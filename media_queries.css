@@ -12,6 +12,33 @@
         display: none;
     }
 
+
+    /***************** BURGER MENU *************/
+    #topPageLinks{
+        height:250px;
+    }
+
+    #topPageLinks .mainLinks{
+        display:none;
+        position: relative; 
+        top:40px;
+        font-weight: 500;
+        min-width: fit-content;
+    }
+
+    .menuIcon{
+        display: block;
+        position: absolute;
+        width:35px;
+        left:0px;
+        top:0px;
+        padding:10px;
+    }
+
+    .menuIconOrange{
+        display: none;
+    }
+
     /***************** HEADER*********** */
     header{
         padding:5px;
@@ -44,7 +71,6 @@
     .mainLinks{
         display:block;
         margin:10px;
-        grid-row-start: 1;
    
     }
 
@@ -264,6 +290,7 @@
     #learnMoreButton{
         margin-right:auto;
         margin-left:auto;
+        margin-top:10px;
     }
 /* ****************PRICING************* */
     #pricingArticle{
@@ -328,6 +355,39 @@
             font-size:16px;
             margin:0;
         }
+    
+     /***************** BURGER MENU *************/
+     #topPageLinks{
+        height:250px;
+    }
+
+    #topPageLinks .mainLinks{
+        display:none;
+        position: relative; 
+        top:50px;
+        font-weight: 500;
+        min-width: fit-content;
+        border: orange solid 3px;
+        background-color:rgb(255, 143, 6);
+    }
+
+    /* .menuIcon{
+        display: block;
+        position: absolute;
+        width:35px;
+        left:0px;
+        top:0px;
+        padding:10px;
+    } */
+
+    .menuIconOrange{
+        display: block;
+        position: absolute;
+        width:60px;
+        left:0px;
+        top:0px;
+        padding:10px;
+    }
 
     /* ************* HEADER ************ */
 
@@ -519,6 +579,7 @@
 
     #learnMoreButton{
         align-self: center;
+       height:20px;
     }
 
     #creativity{
