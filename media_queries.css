@@ -15,14 +15,13 @@
 
     /***************** BURGER MENU *************/
     #topPageLinks{
-        height:250px;
+        height:280px;
     }
 
     #topPageLinks .mainLinks{
         display:none;
         position: relative; 
         top:40px;
-        font-weight: 500;
         min-width: fit-content;
     }
 
