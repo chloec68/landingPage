@@ -338,8 +338,8 @@ h2{
     position:relative;
     z-index: 2;
     left: 232px;
-    top:-41px;
-    height: 4vh;
+    top:-4.6vh;
+    height:4.5vh;
     width: 120px;
     border-radius: 20px;
     background-color:rgb(4,139,154);
@@ -467,12 +467,6 @@ h2{
 }
 
 /**********************************************TEAM MEMBER SOCIAL MEDIAS */
-
-.teamMemberSocialMedias{
-    position:absolute;
-    top: 230px;
-    left: 90px;
-}
 
 .teamMemberSocialMedias a{
     display: none;
@@ -714,6 +708,7 @@ figure{
 #creativity{
     width:100%;
     padding-left: 50px;
+    padding-top: 50px;
 }
 /* ********** ARTICLE */
 #creativityArticle{
@@ -800,7 +795,7 @@ figure{
 .pricingCard{
     width:25%;
     background-color: white;
-    height:45vh;
+    height:50vh;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
@@ -811,7 +806,7 @@ figure{
 
 .starter{
     position:absolute;
-    left:50px;
+    left:0;
     bottom:-50px;
 }
 
@@ -835,7 +830,7 @@ figure{
 
 .professional{
     position:absolute;
-    right:50px;
+    right:0;
     bottom:-50px;
 }
 
@@ -869,7 +864,7 @@ figure{
     display:flex;
     justify-content: center;
     align-items: baseline;
-    padding-bottom:40px;
+    padding-bottom:20px;
 }
 
 .joinNowButton{
