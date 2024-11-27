@@ -1,5 +1,5 @@
 
-
+// function to display burger menu in browser
 function burgerMenu(){
     const menuItems = document.querySelector('.mainLinks');
     if(menuItems.style.display === "flex"){
@@ -8,7 +8,7 @@ function burgerMenu(){
         menuItems.style.display = "flex";
     }
 }
-
+// function to display burger menu in on mobiles and tablets
 function burgerMenuMobile(){
     const menuItems = document.querySelector('.mainLinks');
     if(menuItems.style.display === "block"){
@@ -17,9 +17,9 @@ function burgerMenuMobile(){
         menuItems.style.display = "block";
     }
 }
-
+//function to display dark mode
 function darkMode() {
-    var element = document.body;
+    let element = document.body;
     element.classList.toggle("dark-mode");
 
     const darkModeButton = document.getElementById("darkModeButton");

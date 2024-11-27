@@ -1,0 +1,317 @@
+ /* ************************************************* MEDIA QUERIES : TABLETS ************************************************* */
+
+ @media screen and (min-width:641px) and (max-width: 1084px){
+
+    /* ***********GENERAL************ */
+        :root{
+            font-size:16px;
+            margin:0;
+        }
+    
+     /***************** BURGER MENU *************/
+     #topPageLinks{
+        min-height:250px;
+    }
+
+    #topPageLinks .mainLinks{
+        display:none;
+        position: relative; 
+        top:50px;
+        font-weight: 500;
+        min-width: fit-content;
+        border: orange solid 3px;
+        background-color:rgb(255, 143, 6);
+    }
+
+    /* .menuIcon{
+        display: block;
+        position: absolute;
+        width:35px;
+        left:0px;
+        top:0px;
+        padding:10px;
+    } */
+
+    .menuIconOrange{
+        display: block;
+        position: absolute;
+        width:60px;
+        left:0px;
+        top:0px;
+        padding:10px;
+    }
+
+    /* ************* HEADER ************ */
+
+    #upButton{
+        display: none;
+    }
+
+    header{
+        padding:10px;
+        height:fit-content;
+    }
+
+    #topPageLinks{
+        display:grid;
+        min-height:500px;
+        grid-template-columns: 1fr 2fr 1fr;
+        background: url(./illustration_1_1.svg);
+        background-repeat: no-repeat;
+        background-position-x:53%;
+        background-position-y:bottom;
+        background-size: 70%;
+    }
+
+    #kucra{
+        padding:5px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    .menuIcon{
+        display: none;
+    }
+
+    .mainLinks{
+        display:block;
+        margin:10px;
+        grid-row-start: 1;
+    }
+
+    .mainLinks a{
+        padding:10px 0 10px 10px;
+    }
+
+    ul{
+        grid-column-start:3;
+        grid-row-start: 1;
+        padding:0px;
+        margin:0px;
+        display:flex;
+        width:auto;
+        margin-top:20px;
+    }
+
+    header img{
+        display: none;
+    }
+
+    #wrapperHeaderArticle{
+        padding-top: 0;
+    }
+
+    #wrapperHeaderArticle article{
+        width:100%;
+        position: relative;
+        left:auto;
+        right: auto;
+    }
+
+    h2{
+        font-size: 1.8em;
+        margin:auto;
+        width:80%;
+        text-align: center;
+    }
+
+    header p{
+        padding:0 5px 0 5px;
+        text-align: center;
+        font-size:1em;
+        margin: 20px;
+    }
+
+    #form{
+        text-align: center;
+        width:100%;
+    }
+
+    #email{
+        width:50%;
+        height:40px;
+
+    }
+
+    #submitButton{
+        width:25%;
+        font-size:0.9em;
+        height: 40px;
+        top:0;
+        left:0;
+    
+    }
+
+      /* ************* FEATURES ************ */
+
+      #featuresContainer{
+        margin:10px;
+        padding-bottom: 150px;
+      }
+
+      .featuresArticle{
+        padding: 0;
+      }
+
+    /* ************* TEAM ************ */
+
+    #teamWrapper img{
+        right:0px;
+        width:130px;
+        filter:none;
+    }
+
+    #teamWrapper p{
+        min-height:50px;
+    }
+
+    .teamMember h3{
+        min-height:50px;
+    }
+
+    .teamMemberSocialMedias{
+        position: static;
+    }
+
+    .teamMemberSocialMedias a{
+        display: inline;
+    }
+    
+    /* ************* PARALLAX ************ */
+
+
+    #parallaxWrapper{
+        padding:0;
+        margin-bottom: 20px;
+    }
+    #parallaxContainer{
+        height:30vh;
+    }
+    #parallaxContainer:before {
+        background-position-x: 80%;
+        height: 30vh;
+    }
+
+    #textOnImg{
+        opacity: 1;
+        top: 5vh;
+    }
+
+    #textOnImg p{
+        font-weight: 500;
+        margin:0 5px 0 5px;
+    }
+
+    #textOnImg p,#textOnImg h3,#textOnImg #button{
+        color: #242323;
+    }
+
+     /* ************* BLOG ************ */
+    #blogWrapper{
+        gap:10px;
+        padding-bottom: 230px;
+    }
+
+    #blogWrapper article{
+        width:30%;
+        height:25vh;
+    }
+      
+    /* ************* PRICING ************ */
+    /* CREATIVITY */
+
+    #pricingWrapper{
+        display: block;
+        padding:0;
+        width: 100%;
+        margin:auto;
+    }
+
+    #creativityArticle{
+        width:80%;
+        margin:auto;
+    }
+
+    #creativityArticle p{
+        font-size:1em;
+    }
+
+    #learnMoreButton{
+        align-self: center;
+        min-height:20px;
+    }
+
+    #creativity{
+        width:60%;
+        border-radius: 180px;
+        padding: 0px;
+    }
+
+    figure{
+        width:80%;
+        margin:auto;
+        padding:0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #statsPricingSection{
+        margin:auto;
+    }
+
+     /* PRICING CARDS */
+
+     #pricingArticle{
+        width:100%;
+        min-height:1100px;
+    }
+
+    #pricingCardsWrapper{
+        display: block;
+        width:100%;
+    }
+
+    .pricingCard{
+        width:30%;
+        height: fit-content;
+        padding-bottom: 10px;
+       
+    }
+    .professional,.starter,.advanced{
+        position:relative;
+        bottom:auto;
+    }
+
+    .professional{
+        top:-800px;
+        left:480px;
+    }
+
+    .advanced{
+        left:270px;
+        top:30px;
+    }
+
+    .joinNowButton{
+        width:50%;
+        min-height:30px;
+    }
+
+      /**************** FOOTER **************/
+
+    footer{
+        position:relative;
+        bottom:0px;
+        max-width: 100%;
+        padding:50px;
+    }
+
+    .circle{
+        height: 2.3vh;
+    }
+} 
