@@ -207,10 +207,6 @@
         margin:0 5px 0 5px;
     }
 
-    #textOnImg p,#textOnImg h3,#textOnImg #button{
-        color: #242323;
-    }
-
      /* ************* BLOG ************ */
     #blogWrapper{
         gap:10px;
