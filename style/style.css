@@ -520,7 +520,7 @@ h2{
 
 #parallaxContainer:before{
     content: '';
-    background-image:url(img_landingPage/parallax.png);
+    background-image:url(../img_landingPage/parallax.png);
     background-size:cover;
     background-attachment: fixed;
     background-position: center; 
@@ -609,7 +609,7 @@ article{
 
 #article1:before{
     content:'';
-    background:url('img_landingPage/blog1.png');
+    background:url('../img_landingPage/blog1.png');
     background-size:cover;
     background-position:50% 100%;
     transition:0.5s;
@@ -625,7 +625,7 @@ article{
 
 #article2:before{
     content:'';
-    background:url('img_landingPage/blog2.png');
+    background:url('../img_landingPage/blog2.png');
     background-size:cover;
     background-position:50% 100%;
     transition:0.5s;
@@ -640,7 +640,7 @@ article{
 /* ********************* ARTICLE 3 */
 #article3:before{
     content:'';
-    background:url('img_landingPage/blog3.png');
+    background:url('../img_landingPage/blog3.png');
     background-size:cover;
     background-position:50% 100%;
     transition:0.5s;

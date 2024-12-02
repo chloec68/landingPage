@@ -56,7 +56,7 @@
         display:grid;
         min-height:500px;
         grid-template-columns: 1fr 2fr 1fr;
-        background: url(./illustration_1_1.svg);
+        background: url(../illustration_1_1.svg);
         background-repeat: no-repeat;
         background-position-x:53%;
         background-position-y:bottom;
@@ -296,6 +296,12 @@
         left:270px;
         top:30px;
     }
+
+    .starter{
+        left:40px;
+        top:-40px;
+    }
+
 
     .joinNowButton{
         width:50%;
