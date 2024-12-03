@@ -61,6 +61,7 @@
         z-index: 20;
         position:absolute;
         top:15px;
+        left:5px;
     }
     
     .burger span {
