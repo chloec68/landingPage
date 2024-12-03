@@ -12,7 +12,6 @@
         display: none;
     }
 
-
     /***************** BURGER MENU *************/
     #topPageLinks{
         min-height:280px;
@@ -57,7 +56,6 @@
 
     /************BURGER MENU (ICON) SPAN = LINES -> CROSS ***********/
     
-    
     .burger {
         width: 32px;
         z-index: 20;
@@ -94,7 +92,6 @@
         transform: translateY(10px);
         margin-top: -4px;
     }
-    
     
     .burger.active span {
         background-color: transparent;
@@ -194,7 +191,6 @@
         height: 2.5vh;
         top:0;
         left:0;
-    
     }
 
   /********************** FEATURES *******************/
@@ -227,7 +223,6 @@
         height: fit-content;
         width:100%;
         margin:0 0 30px 0;
-        
     }
 
     #teamWrapper img{
@@ -243,7 +238,6 @@
 
     .teamMemberSocialMedias{
         position:static;
-     
     }
 
     .name{
@@ -293,7 +287,6 @@
         display:grid;
         grid-template-rows: 1fr 0.2fr;
         width:90%;
-       
     }
 
     #article1::before{
@@ -377,7 +370,6 @@
         height: fit-content;
         left:20%;
         padding-bottom: 10px;
-       
     }
     .professional,.starter,.advanced{
         position:relative;
