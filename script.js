@@ -1,13 +1,4 @@
 
-// function to display burger menu in browser
-function burgerMenu(){
-    const menuItems = document.querySelector('.mainLinks');
-    if(menuItems.style.display === "flex"){
-        menuItems.style.display = "none";
-    } else {
-        menuItems.style.display = "flex";
-    }
-}
 // function to display burger menu in on mobiles and tablets
 function burgerMenuMobile(){
     const menuItems = document.querySelector('.mainLinks');
@@ -34,3 +25,12 @@ function darkMode() {
         darkModeButton.style.color="#ffffff";
     }
  }
+
+
+//function to turn lines into cross (bruger menu) when clicking 
+
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+});

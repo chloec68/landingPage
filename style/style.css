@@ -60,33 +60,6 @@ h3{
     transform: scale(1.5);
     -webkit-transform:scale(1.5);
 }
-
-/* *********************************************************************** BURGER MENU *******************************************************/
-
-/* .mainLinks{display: none;} */
-
-.menuIcon{
-    /* position:absolute;
-    top:0px;
-    left:77%;
-    bottom:0;
-    width:60px;    */
-    display: none;
-}
-
-/* .menuIcon:hover{
-    cursor: pointer;
-    width:70px;
-} */
-
-#topNav{
-    width:55%;
-}
-
-.menuIconOrange{
-    display: none;
-}
-
 /************************************************************************* HEADER **************************************************************/
 
 header{
@@ -97,6 +70,10 @@ header{
 }
 
 /******************************** LINKS (all) AT TOP OF THE HEADER  */
+#topNav{
+    width:55%;
+}
+
 
 #topPageLinks{
     display: flex;
