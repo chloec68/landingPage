@@ -13,34 +13,82 @@
         min-height:250px;
     }
 
-    #topPageLinks .mainLinks{
-        display:none;
-        position: relative; 
-        top:50px;
-        font-weight: 500;
-        min-width: fit-content;
-        border: orange solid 3px;
-        background-color:rgb(255, 143, 6);
+    .mainLinks{
+        position: absolute; 
+        min-width: 100%;
+        height:77vh;
+        background-color:#64d5ed;
+        opacity:0.96;
+        display: none;
+        margin:0px;
     }
 
-    /* .menuIcon{
-        display: block;
-        position: absolute;
-        width:35px;
-        left:0px;
-        top:0px;
-        padding:10px;
-    } */
-
-    .menuIconOrange{
-        display: block;
-        position: absolute;
-        width:60px;
-        left:0px;
-        top:0px;
-        padding:10px;
+    #topNav{
+        z-index:100;
     }
 
+    .mainLinks a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #darkModeButton{
+        display: block;
+        margin:auto;
+    }
+
+        /************BURGER MENU (ICON) SPAN = LINES -> CROSS ***********/
+    
+        .burger {
+            width: 32px;
+            z-index: 20;
+            position:absolute;
+            top:15px;
+            left:5px;
+        }
+        
+        .burger span {
+            width: 100%;
+            height: 4px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+            display: block;
+            transition: 0.5s ease-in-out;
+        }
+        
+        .burger span::before,
+        .burger span::after {
+            content: "";
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            transition: all 0.5s ease-in-out;
+            border-radius: 12px;
+            height: 4px;
+        }
+        
+        .burger span::before {
+            transform: translateY(-10px);
+        
+        }
+        
+        .burger span::after {
+            transform: translateY(10px);
+            margin-top: -4px;
+        }
+        
+        .burger.active span {
+            background-color: transparent;
+        }
+        
+        .burger.active span::before {
+            transform: rotateZ(45deg) translateY(0);
+        }
+        
+        .burger.active span::after {
+            transform: rotateZ(-45deg) translateY(0);
+        }
     /* ************* HEADER ************ */
 
     #upButton{
@@ -48,7 +96,6 @@
     }
 
     header{
-        padding:10px;
         height:fit-content;
     }
 
@@ -72,16 +119,6 @@
 
     h1{
         font-size: 2.5em;
-    }
-
-    .menuIcon{
-        display: none;
-    }
-
-    .mainLinks{
-        display:block;
-        margin:10px;
-        grid-row-start: 1;
     }
 
     .mainLinks a{
