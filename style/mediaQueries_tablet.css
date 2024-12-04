@@ -31,11 +31,15 @@
         display: block;
         text-align: center;
         padding: 10px;
+        font-size:1.5em;
+        font-weight:500;
     }
 
     #darkModeButton{
         display: block;
         margin:auto;
+        font-size:1.3em;
+        margin-top: 10px;
     }
 
         /************BURGER MENU (ICON) SPAN = LINES -> CROSS ***********/
@@ -119,10 +123,6 @@
 
     h1{
         font-size: 2.5em;
-    }
-
-    .mainLinks a{
-        padding:10px 0 10px 10px;
     }
 
     ul{
