@@ -337,15 +337,20 @@ h2{
 
 .teamMemberSocialMedias a{
     display: none;
-    margin-left:10px;
-    margin-right:10px;
-    color:rgb(23, 189, 222)
+    margin-bottom: 8px;
+    color:rgb(23, 189, 222);
     }
+
+.teamMemberSocialMedias{
+    position:absolute;
+    top:100px;
+    left:50px;
+}
 
 /* ********************************************* HOVER */
 /* SOCIAL MEDIAS LINKS APPEAR WHEN HOVERING */
 .teamMember:hover a{
-    display: inline;
+    display: block;
     cursor:pointer;
 }
 /* TEAM MEMBER PICTURE AND INFO SIZE UP */
