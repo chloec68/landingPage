@@ -131,6 +131,10 @@
         margin-top:20px;
     }
 
+    .headerI{
+        font-size: 1em;
+    }
+
     #wrapperHeaderArticle{
         padding:0px;
     }

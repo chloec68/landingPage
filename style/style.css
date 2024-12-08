@@ -134,6 +134,7 @@ nav a:focus{
     margin:auto;
     color:white;
     width:50%;
+    font-size: 20px;;
 }
 
 ul{
@@ -221,15 +222,11 @@ h2{
 }
 
 #submitButton:hover{
-    cursor:pointer;
-    font-weight:500;
-    font-size:1.3em
-}
-
-#submitButton:active{
    background-color: rgb(1, 202, 224);
    transform: scale(1.3);
    -webkit-transform:scale(1.3);
+   cursor:pointer;
+   font-weight:500;
 }
 
 #submitButton:focus{
